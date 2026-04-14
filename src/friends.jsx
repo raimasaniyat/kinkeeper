@@ -14,7 +14,7 @@ relationships that matter most.</p>
                     <button className="bg-[#244d3f] text-white px-2 py-4 rounded-sm"><i class="fa-solid fa-plus"></i> Add a Friend</button>
                 </div>
 
-                <div className="summary-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-full mx-auto text-center my-10">
+                <div className="summary-section max-w-full mx-auto my-10 text-center grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-4">
                     <div className="summary-item bg-white p-2.5 max-w-[250px] rounded-sm shadow shadow-[#cdd1d7e0]">
                         <div className="summary-wrap space-y-1">
                             <h3 className="text-[#244d3f]">10</h3>
@@ -41,7 +41,31 @@ relationships that matter most.</p>
                     </div>
                 </div>
 
-                
+                <div className="friendsCard-section max-w-full mx-auto my-10 text-center grid justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-4">
+
+                    {friends.map(friend=> <div className="friendsCard-item bg-white p-6 max-w-50 mx-auto rounded-sm shadow shadow-[#cdd1d7e0]">
+                        <div>
+                            <img className="h-40 w-40" src={friend.picture}/>
+                        </div>
+                        <div>
+                            <h4 className="text-md">{friend.name}</h4>
+                        </div>
+                        <div>
+                            <p className="text-[#64748B]">{friend.days_since_contact}days ago</p>
+                        </div>
+                        <div>
+                            {friend.tags.map(tag=> (
+                                <div key={tag}>{tag}
+                                </div>
+                            ))}
+                        </div>
+                        <div>
+                            <p>{friend.status}</p>
+                        </div>
+
+                    </div>)}
+
+                </div>
 
             </div>
 
