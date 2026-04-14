@@ -1,5 +1,5 @@
 
-const friends = () => {
+const Friends = ({friendsPromise}) => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const friends = () => {
     );
 };
 
-export default friends;
+export default Friends;
