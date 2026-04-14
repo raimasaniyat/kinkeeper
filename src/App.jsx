@@ -1,3 +1,4 @@
+import Friends from "./friends"
 
 const getFriends = async () => {
   const res = await fetch ("/friends.json")
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Friends friendsPromise={friendsPromise} ></Friends>
+      <Friends friendsPromise={friendsPromise}></Friends>
     </>
   )
 }
