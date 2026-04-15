@@ -1,7 +1,5 @@
 import friends from "./friends.json";
     
-
-
 const FriendsGrid = () => {
     return (
         <div>
