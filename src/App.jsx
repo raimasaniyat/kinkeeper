@@ -1,18 +1,8 @@
-import Friends from "./friends"
+import Home from "./Home";
 
-const getFriends = async () => {
-  const res = await fetch ("/friends.json")
-  return res.json()
-}
-const friendsPromise = getFriends()
 
 function App() {
-
-  return (
-    <>
-      <Friends friendsPromise={friendsPromise}></Friends>
-    </>
-  )
+  return <Home/>
 }
 
-export default App
+export default App;
