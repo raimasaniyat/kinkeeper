@@ -10,7 +10,7 @@ const Banner = () => {
                     <h2 className="text-[#1F2937] text-5xl">Friends to keep close in your life</h2>
                     <p className="text-[#64748B]">Your personal shelf of meaningful connections. Browse, tend, and nurture the
 relationships that matter most.</p>
-                    <button className="bg-[#244d3f] text-white px-2 py-4 rounded-sm"><i class="fa-solid fa-plus"></i> Add a Friend</button>
+                    <button className="bg-[#244d3f] text-white px-2 py-4 rounded-sm"><i className="fa-solid fa-plus"></i> Add a Friend</button>
                     </div>
 
                 </div>
