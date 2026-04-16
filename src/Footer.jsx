@@ -6,7 +6,7 @@ const Footer = () => {
 
             <div className="max-w-[1110px] mx-auto px-4 py-12 text-center space-y-4">
 
-                <h2 className="text-3xl font-bold">KeenKeeper</h2>
+                <h2 className="text-3xl font-bold">KinnKeeper</h2>
 
                 <p className="text-sm text-gray-200 max-w-xl mx-auto">
                     Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.

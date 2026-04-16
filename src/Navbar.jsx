@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav className="bg-white shadow-sm sticky top-0 z-50">
             <div className="max-w-[1110px] mx-auto px-4 py-4 flex justify-between items-center">
-                <div className="text-2xl font-bold text-[#244d3f]">kinkeeper</div>
+                <div className="text-2xl font-bold text-[#244d3f]">KinKeeper</div>
 
                 <button 
                     className="md:hidden text-[#244d3f] text-2xl"
